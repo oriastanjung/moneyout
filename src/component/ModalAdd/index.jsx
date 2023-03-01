@@ -1,8 +1,12 @@
 import React from "react";
 import Button from "../Button";
 import FormAdd from "../FormAdd";
-
+import { useNavigate } from "react-router-dom";
 function ModalAdd(props) {
+    const navigation = useNavigate()
+    const handleCancel = () => {
+        navigation("/")
+    }
   return (
     <div className="bg-[#BDCDD6] py-3">
       <div className="container mx-auto mt-6">
@@ -21,7 +25,7 @@ function ModalAdd(props) {
             </p>
         </div>
         <div className="flex gap-2 justify-end px-8 mt-4 mb-3">
-            <Button isDanger>Batalkan</Button>
+            <Button isDanger onClick={handleCancel}>Batalkan</Button>
             <Button>Tambahkan</Button>
         </div>
       </div>
