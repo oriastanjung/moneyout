@@ -1,7 +1,11 @@
 import React from 'react'
 import ButtonAdd from '../ButtonAdd'
-
+import { useNavigate } from 'react-router-dom'
 function TotalCard(props) {
+  const navigation = useNavigate()
+  const handleClick = () => {
+    navigation("/add")
+  }
   return (
     <div className='flex flex-row justify-between items-center px-8'>
         <div className='flex flex-col gap-1'>
@@ -9,7 +13,7 @@ function TotalCard(props) {
             <p className='text-primaryBlue text-md font-normal'>Rp.9.089.999</p>
         </div>
         <div className='flex justify-center items-center'>
-            <ButtonAdd />
+            <ButtonAdd onClick={handleClick}/>
         </div>
     </div>
   )

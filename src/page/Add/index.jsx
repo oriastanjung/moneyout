@@ -1,8 +1,11 @@
 import React from 'react'
+import ModalAdd from '../../component/ModalAdd'
 
 function Add() {
   return (
-    <div>Add</div>
+    <div className='pt-[20vh]'>
+      <ModalAdd/>
+    </div>
   )
 }
 
