@@ -4,7 +4,7 @@ function Button(props) {
   return (
     <button
       className={`${
-        props.isDanger ? "bg-[#D64214]" : "bg-primaryBlue"
+        props.isdanger ? "bg-[#D64214]" : "bg-primaryBlue"
       } px-4 py-2 text-white rounded-[10px] text-xs `}
       {...props}
     >

@@ -12,7 +12,7 @@ function CardItem(props) {
       <div className="flex items-center justify-between grow">
         <div>
           <h5 className="text-xs text-primaryBlue">{props.title}</h5>
-          <p className="text-[10px] text-whiteTitle">Hari Ini, 28 Feb</p>
+          <p className="text-[10px] text-whiteTitle">{props.date}</p>
         </div>
         <div>
           <p className="text-xs text-primaryBlue">Rp.{props.price}</p>

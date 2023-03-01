@@ -2,34 +2,40 @@ import React from "react";
 import Button from "../Button";
 import FormAdd from "../FormAdd";
 import { useNavigate } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 function ModalAdd(props) {
-    const navigation = useNavigate()
-    const handleCancel = () => {
-        navigation("/")
-    }
   return (
-    <div className="bg-[#BDCDD6] py-3">
-      <div className="container mx-auto mt-6">
-        <div className="text-center relative z-10 flex justify-center items-center">
-          <p className="text-primaryBlue bg-[#BDCDD6] px-4 text-md">
-            Tambahkan Pengeluaran
-          </p>
-        </div>
-        <hr className="relative bg-primaryBlue top-[-12px] z-0" />
-      </div>
-      <div >
-        <FormAdd />
-        <div className="flex justify-end px-8 mt-8">
-            <p className="text-primaryBlue text-xs">
-                *waktu pengeluaran otomatis terisi
+    <>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
+      {/* Same as */}
+      <ToastContainer />
+      <div id="form" className="bg-[#BDCDD6] py-3">
+        <div className="container mx-auto mt-6">
+          <div className="text-center relative z-10 flex justify-center items-center">
+            <p className="text-primaryBlue bg-[#BDCDD6] px-4 text-md">
+              Tambahkan Pengeluaran
             </p>
+          </div>
+          <hr className="relative bg-primaryBlue top-[-12px] z-0" />
         </div>
-        <div className="flex gap-2 justify-end px-8 mt-4 mb-3">
-            <Button isDanger onClick={handleCancel}>Batalkan</Button>
-            <Button>Tambahkan</Button>
+        <div>
+          <FormAdd />
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
