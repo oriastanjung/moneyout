@@ -12,7 +12,7 @@ function SectionPengeluaran(props) {
         </div>
         <hr className="relative top-[-8px] z-0" />
       </div>
-      <div className="container mx-auto px-8 mt-8 flex flex-col gap-4  overflow-y-scroll h-[50vh]">
+      <div className="container mx-auto px-8 mt-8 flex flex-col gap-4  overflow-y-scroll h-[40vh]">
         <CardItem title={"Makanan"} price={10000}/>
         <CardItem title={"Makanan"} price={10000}/>
         <CardItem title={"Makanan"} price={10000}/>
