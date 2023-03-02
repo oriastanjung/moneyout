@@ -3,6 +3,7 @@ import iconDrink from "../../assets/iconDrink.png";
 import iconFood from "../../assets/iconFood.png";
 import iconOtherThings from "../../assets/iconOtherThings.png";
 import { getMonth } from "../../utils/getMonth";
+import { setPrice } from "../../utils/setPrice";
 
 function CardItem(props) {
   return (
@@ -30,7 +31,7 @@ function CardItem(props) {
           </p>
         </div>
         <div>
-          <p className="text-[13px] font-semibold text-[#F82727]">Rp.{props.price}</p>
+          <p className="text-[13px] font-semibold text-[#F82727]">Rp.{setPrice(props.price)}</p>
         </div>
       </div>
     </div>
