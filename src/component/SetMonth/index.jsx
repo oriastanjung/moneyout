@@ -23,7 +23,7 @@ function SetMonth(props) {
     <div className="flex flex-row justify-between items-center px-8">
       <div className="flex flex-col gap-1">
         <h3 className="text-black text-base font-medium">Bulan</h3>
-        <select onChange={handleChange} className=" flex flex-row items-center gap-1 text-black text-xs font-medium" value={month}>
+        <select onChange={handleChange} className=" flex flex-row items-center gap-1 text-black text-xs font-medium bg-white" value={month}>
           <option className="text-black text-xs font-medium" value={"Januari"}>
             Januari
           </option>
