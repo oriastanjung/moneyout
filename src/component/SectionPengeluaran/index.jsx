@@ -7,17 +7,14 @@ function SectionPengeluaran(props) {
   const { data } = useSelector((state) => state.money)
   return (
     <>
-      <div className="container mx-auto mt-6">
-        <div className="text-center relative z-10 flex justify-center items-center">
-          <p className="text-whiteTitle bg-white px-4 text-xs">
-            Pengeluaran Terakhir
+      <div className="container mt-12 px-[30px]">
+          <p className="text-black bg-white text-base font-medium">
+            Riwayat Pengeluaran
           </p>
-        </div>
-        <hr className="relative top-[-8px] z-0" />
       </div>
-      <div className="container mx-auto px-8 mt-8 flex flex-col gap-4  overflow-y-scroll h-[40vh]">
+      <div className="container mx-auto px-[30px] mt-8 flex flex-col gap-4  overflow-y-scroll h-[40vh]">
         {data && data.map((item) => {
-          return <CardItem  title={item.pengeluaran} price={item.biaya} date={moment(new Date(item.date)).format("MMMM")}/>
+          return <CardItem  title={item.pengeluaran} price={item.biaya} date={item.date}/>
         })}
         
       </div>
