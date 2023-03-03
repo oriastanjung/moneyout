@@ -32,9 +32,9 @@ function TopSide(props) {
   }, []);
   return (
     <div className="container mx-auto mb-[88px]" >
-      <div className="px-[30px] pt-[40px] ">
+      <header className="px-[30px] pt-[40px] pb-4 sticky top-0 bg-white">
         <Navbar user={user} />
-      </div>
+      </header>
       <div className="flex flex-row justify-between px-[30px] pt-[28px]">
         <CardBalance month={`${new Date().getMonth()}`} />
       </div>

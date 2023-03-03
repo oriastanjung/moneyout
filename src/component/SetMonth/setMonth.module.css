@@ -1,0 +1,26 @@
+.container {
+  overflow: auto;
+  max-width: 85%;
+  display: flex;
+  gap: 5rem;
+  scroll-snap-type: x mandatory;
+}
+
+.container .item {
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+.container::-webkit-scrollbar {
+  height: 3px;
+}
+
+.container::-webkit-scrollbar-track {
+  border-radius: 0;
+}
+
+.container::-webkit-scrollbar-thumb:horizontal {
+  border-radius: 2px;
+  background: #70EC46;
+}
+

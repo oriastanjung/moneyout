@@ -18,7 +18,7 @@ function SectionPengeluaran(props) {
           Riwayat Pengeluaran
         </p>
       </div>
-      <div className="container mx-auto px-[30px] mt-8 flex flex-col gap-4  overflow-y-scroll h-[40vh]">
+      <div className="container mx-auto px-[30px] mt-8 flex flex-col gap-4  overflow-y-scroll h-[30vh]">
         {data &&
           data.map((item) => {
             return (
@@ -30,7 +30,7 @@ function SectionPengeluaran(props) {
             );
           })}
       </div>
-      <div className="relative bottom-[15vh] flex justify-end px-[30px] z-10">
+      <div className="sticky bottom-[15vh] flex justify-end px-[30px] z-10">
         <ButtonAdd onClick={handleClick} />
       </div>
     </>
