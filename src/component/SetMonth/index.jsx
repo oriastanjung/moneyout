@@ -77,40 +77,40 @@ function SetMonth(props) {
         </select> */}
         <div className="max-w-sm">
         <div className={`${styles["container"]} overflow-auto p-4`}>
-          <button className={`${styles["item"]} font-semibold  text-[#B3B3B3]`} >
+          <button className={`${styles["item"]} font-semibold  text-[#B3B3B3]`} git >
             Januari
           </button>
-          <button className={`${styles["item"]} font-semibold  text-[#B3B3B3]`} >
+          <button className={`${styles["item"]} font-semibold  text-[#B3B3B3]`} git >
             Februari
           </button>
-          <button className={`${styles["item"]} font-semibold  text-[#B3B3B3]`} >
+          <button className={`${styles["item"]} font-semibold  text-[#B3B3B3]`} git >
             Maret
           </button>
-          <button className={`${styles["item"]} font-semibold  text-[#B3B3B3]`} >
+          <button className={`${styles["item"]} font-semibold  text-[#B3B3B3]`} git >
             April
           </button>
-          <button className={`${styles["item"]} font-semibold  text-[#B3B3B3]`} >
+          <button className={`${styles["item"]} font-semibold  text-[#B3B3B3]`} git >
             Mei
           </button>
-          <button className={`${styles["item"]} font-semibold  text-[#B3B3B3]`} >
+          <button className={`${styles["item"]} font-semibold  text-[#B3B3B3]`} git >
             Juni
           </button>
-          <button className={`${styles["item"]} font-semibold  text-[#B3B3B3]`} >
+          <button className={`${styles["item"]} font-semibold  text-[#B3B3B3]`} git >
             Juli
           </button>
-          <button className={`${styles["item"]} font-semibold  text-[#B3B3B3]`} >
+          <button className={`${styles["item"]} font-semibold  text-[#B3B3B3]`} git >
             Agustus
           </button>
-          <button className={`${styles["item"]} font-semibold  text-[#B3B3B3]`} >
+          <button className={`${styles["item"]} font-semibold  text-[#B3B3B3]`} git >
             September
           </button>
-          <button className={`${styles["item"]} font-semibold  text-[#B3B3B3]`} >
+          <button className={`${styles["item"]} font-semibold  text-[#B3B3B3]`} git >
             Oktober
           </button>
-          <button className={`${styles["item"]} font-semibold  text-[#B3B3B3]`} >
+          <button className={`${styles["item"]} font-semibold  text-[#B3B3B3]`} git >
             November
           </button>
-          <button className={`${styles["item"]} font-semibold  text-[#B3B3B3]`} >
+          <button className={`${styles["item"]} font-semibold  text-[#B3B3B3]`} git >
             Desember
           </button>
         </div>
