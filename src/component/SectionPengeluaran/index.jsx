@@ -4,9 +4,13 @@ import { useSelector } from "react-redux";
 import moment from "moment";
 import ButtonAdd from "../ButtonAdd";
 import { useNavigate } from "react-router-dom";
+import { getMonth } from "../../utils/getMonth";
 
 function SectionPengeluaran(props) {
   const { data } = useSelector((state) => state.money);
+  const dataFilter = data ? data.filter((item) => {
+    return getMonth(new Date(item.date).getMonth()) === props.month;
+  }) : []
   const navigation = useNavigate();
   const handleClick = () => {
     navigation("/add");
@@ -19,8 +23,9 @@ function SectionPengeluaran(props) {
         </p>
       </div>
       <div className="container mx-auto px-[30px] mt-8 flex flex-col gap-4  overflow-y-scroll h-[30vh]">
-        {data &&
-          data.map((item) => {
+        
+        {dataFilter &&
+          dataFilter.map((item) => {
             return (
               <CardItem
                 title={item.pengeluaran}
@@ -30,7 +35,7 @@ function SectionPengeluaran(props) {
             );
           })}
       </div>
-      <div className="sticky bottom-[15vh] flex justify-end px-[30px] z-10">
+      <div className="sticky bottom-[7%] flex justify-end px-[40px] z-10">
         <ButtonAdd onClick={handleClick} />
       </div>
     </>
